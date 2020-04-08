@@ -1,6 +1,7 @@
 module.exports = {
-
-    databaseURL: process.env.DATABASE_URL || "postgres://@127.0.0.1:5432/nibs",
+    
+    // For the time being we will have this URL point to our staging environment variable.
+    databaseURL: process.env.YUGABYTECLOUD_STAGING_YSQL_CONNECT_URI || "postgres://@127.0.0.1:5432/nibs",
 
     // Nibs users are created as Contacts under a generic Account in SFDC. This is the id of the generic account.
     contactsAccountId: process.env.CONTACTS_ACCOUNT_ID,
